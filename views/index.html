@@ -1,0 +1,78 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Suf Image Search</title>
+    <meta name="description" content="URL shortener made based on Freecodecamp's spec">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Image Abstraction API
+      </h1>
+    </header>
+
+    <main>
+      <h4>
+        Description:
+      </h4>
+      <p>
+        This API allows you to query a list of images based on the search term you provide. 
+      </p>
+      <h4>
+        Example:
+      </h4>
+      <p>
+        Enter:
+      </p>
+      <code>
+        https://suf-image-search.glitch.me/imagesearch/:searchterm
+      </code>
+      <p>
+        And you will receive an array of JSON objects like below:
+      </p>
+      <code>
+        { "url":"http://foo.com:8.jpg", 
+          "snippet": "This is a test..",
+          "thumbnail": "https://where.yo",
+          "context": "https://whereitsused"
+        }
+      </code>
+      <p>
+        To see the 10 most recent queries, use:
+      </p>
+      <code>
+        https://suf-image-search.glitch.me/latest/imagesearch
+      </code>
+      <p>
+        The url will return a list of 10 JSON objects with 'term' and 'when' properties.
+      </p>
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
