@@ -8,7 +8,7 @@ Pass a search term as a parameter and an optional offset query string. You will 
 - GET /latest/imagesearch:
 This will return a list of the 10 most recent search queries requested.
 
-You can find the demo [here](https://suf-url-shortener.glitch.me). Website is powered by [Glitch](https://glitch.com/about).
+You can find the demo [here](https://suf-image-search.glitch.me/. Website is powered by [Glitch](https://glitch.com/about).
 
 
 Powered by: Glitch (Made by [Fog Creek](https://fogcreek.com/))
